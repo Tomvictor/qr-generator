@@ -28,7 +28,6 @@ for x in range(1,12):
 	salt = hashlib.sha1(word1).hexdigest()[:10]
 	print("count : " + str(x))
 	vcode = str(salt)
-	vcode = vcode.upper()
 	vurl = "http://verify.technorip.com/get/?q=" + vcode
 	print("verification code: " + vcode)
 	print("verification URL: " + vurl)
